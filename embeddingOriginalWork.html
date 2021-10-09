@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>
+            Ilya Kuksenko's Profile
+        </title>
+    </head>
+
+    <script>
+        function playSound() {
+          var a = document.getElementById("audioFile");
+          if (document.getElementById("playText").style.display === 'none') {
+            document.getElementById("playText").style.display = 'block';
+            document.getElementById("stopText").style.display = 'none';
+            a.pause();
+          } else {
+            document.getElementById("playText").style.display = 'none';
+            document.getElementById("stopText").style.display = 'block';
+            a.play();
+          }
+        }
+    </script>
+  
+    
+
+    <body>
+        <div class="row justify-content-center">
+            <h3>Hello World Welcome to Info 101 Webpage</h3>
+        </div>
+
+        
+
+        <audio id="audioFile">
+            <source src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_5MG.mp3" type="audio/mpeg">
+        </audio>
+
+        <h3>Embedded Webpage</h3>
+        <div class="row justify-content-center">
+            <iframe src="https://www.washington.edu/" title="University of Washington" width="100%" height="100%"></iframe>
+        </div>
+        
+        <h3 class="mt-5">Embedded Youtube video starting at 3 minutes and without the autoplay feature.</h3>
+        <div class="row justify-content-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/acBJsjCqgtM?start=180"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+        <h3 class="mt-5">Audio Example</h3>
+        <div class="row justify-content-center">
+            <audio controls>
+                <source src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_5MG.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <h3 class="mt-5">Video Example</h3>
+        <div class="row justify-content-center">
+            <video width="320" height="240" controls>
+                <source src="sampleVid.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h3 class="mt-5">Displaying image using the object tag</h3>
+        <div class="row justify-content-center mt-3">
+            <h5 id="playText">Click on image to play audio</h5>
+            <h5 id="stopText" style="display: none;">Click on image to stop audio</h5>
+        </div>
+        <div class="row justify-content-center">
+                <a onclick='return playSound()' >
+                    <object data="info.jfif" tyupe="image/gif" title="Solutions Engineering"></object>
+               </a>
+        </div>
+
+        <h3 class="mt-5">Displaying pdf using the object tag</h3>
+        <div class="row justify-content-center mt-3">
+            <object height="100%" width="100%" type="application/pdf" data="examplePdf.pdf"></object>
+        </div>
+
+        <h3 class="mt-5">Rss Feed Example - With Help from surfing-waves.com</h3>
+        <div class="row justify-content-center">
+            <iframe id="rssfeed_frame" width="230" height="260" frameborder="0" src="https://feed.surfing-waves.com/php/rssfeed.php?rssfeed[url][0]=http%3A%2F%2Ffeeds.foxnews.com%2Ffoxnews%2Fworld&amp;&amp;rssfeed[frame_width]=230&amp;rssfeed[frame_height]=260&amp;rssfeed[scroll]=on&amp;rssfeed[scroll_step]=6&amp;rssfeed[scroll_bar]=on&amp;rssfeed[target]=_blank&amp;rssfeed[font_size]=12&amp;rssfeed[font_face]=&amp;rssfeed[border]=on&amp;rssfeed[css_url]=https%3A%2F%2Ffeed.surfing-waves.com%2Fcss%2Fstyle2a.css&amp;rssfeed[title]=on&amp;rssfeed[title_name]=RSS%20Feed%20-%20Fox%20News&amp;rssfeed[title_bgcolor]=%233366ff&amp;rssfeed[title_color]=%23fff&amp;rssfeed[title_bgimage]=&amp;rssfeed[footer]=off&amp;rssfeed[footer_name]=rss%20feed&amp;rssfeed[footer_bgcolor]=%23fff&amp;rssfeed[footer_color]=%23333&amp;rssfeed[footer_bgimage]=&amp;rssfeed[item_bgcolor]=%23fff&amp;rssfeed[item_bgimage]=&amp;rssfeed[item_title_length]=50&amp;rssfeed[item_title_color]=%23666&amp;rssfeed[item_border_bottom]=on&amp;rssfeed[item_source_icon]=off&amp;rssfeed[item_date]=off&amp;rssfeed[item_description]=on&amp;rssfeed[item_description_length]=120&amp;rssfeed[item_description_color]=%23666&amp;rssfeed[item_description_link_color]=%23333&amp;rssfeed[item_description_tag]=off&amp;rssfeed[no_items]=0&amp;rssfeed[cache]= 3ed6b49194eff70264fb0da0f19bc63a" marginwidth="0" marginheight="0" vspace="0" hspace="0"></iframe>
+        </div>
+    </body>
+</html>
