@@ -1,0 +1,74 @@
+body {
+  margin-bottom: 0;
+}
+
+#intro {
+  font-family: cursive;
+}
+
+#tmobileImg {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  margin: 20px;
+}
+
+#tmobileImg:hover {
+  top: 5px;
+}
+
+#tmobileImgContainer {
+  min-width: 10vw;
+  max-width: 15vw;
+  float: left;
+}
+
+#workExperience {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 110%;
+  font: bold;
+  float: right;
+}
+
+#profileImg {
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid black 2px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+#closingImage {
+  width: 100vw;
+  height: 20vh;
+  margin: 20px;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  text-align: center;
+  color: white;
+  margin-top: 25vh;
+  margin-bottom: 0;
+  background-color: rgb(26, 26, 26);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#closingText {
+  border: dotted;
+  font-size: x-large;
+  color: black;
+  font-weight: bold;
+}
