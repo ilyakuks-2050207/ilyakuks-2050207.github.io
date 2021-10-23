@@ -1,0 +1,115 @@
+body {
+  background-image: url("dark_wood.png");
+  filter: opacity(0.7);
+}
+
+p,
+a,
+#LeftNav ul a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Arial";
+  font-weight: bold;
+}
+
+h3,
+#LeftNav,
+#LeftNav ul a {
+  font-family: "Passion One";
+  color: #ffbc00;
+}
+
+#Header,
+#LeftNav,
+#Content,
+#Footer {
+  border: solid 8px black;
+}
+
+h3 {
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+#Header {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#Header h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#LeftNav {
+  width: 400px;
+  float: left;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+#LeftNav img {
+  position: relative;
+  width: 70px;
+  height: auto;
+}
+
+#LeftNav ul a:hover {
+  cursor: crosshair;
+}
+
+#LeftNav h3 {
+  margin: 5px;
+  outline: solid #ffbc00;
+}
+
+#Content {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px;
+}
+
+#Content p {
+  backdrop-filter: blur(100px);
+}
+
+#Footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#Footer h3 {
+  padding-left: 10px;
+}
+
+#Footer ul {
+  flex: 1;
+}
+
+#Footer p {
+  padding-right: 10px;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+div {
+  background-color: #8e41d5;
+}
+
+a {
+  font-size: 24px;
+}
